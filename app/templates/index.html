@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社交媒体智能体平台</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 侧边栏 -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo">📱 社交智能体</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-page="dashboard">📊 仪表盘</a>
+        <a href="#" class="nav-item" data-page="projects">📁 项目管理</a>
+        <a href="#" class="nav-item" data-page="sources">📡 数据来源</a>
+        <a href="#" class="nav-item" data-page="topics">🔥 热点管理</a>
+        <a href="#" class="nav-item" data-page="content">✏️ 内容工作台</a>
+        <a href="#" class="nav-item" data-page="publishing">🚀 发布管理</a>
+        <a href="#" class="nav-item" data-page="analytics">📈 数据分析</a>
+        <a href="#" class="nav-item" data-page="strategy">⚙️ 策略管理</a>
+        <a href="#" class="nav-item" data-page="auth">🔐 认证</a>
+      </nav>
+      <div class="sidebar-footer">
+        <span id="auth-status" class="auth-status">未登录</span>
+      </div>
+    </aside>
+
+    <!-- 移动端遮罩 -->
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- 主内容区 -->
+    <main id="main" class="main">
+      <header class="main-header">
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <h2 id="page-title">仪表盘</h2>
+      </header>
+      <div id="content" class="content">
+        <!-- 动态内容渲染区 -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast 容器 -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- 模态框容器 -->
+  <div id="modal-container" class="modal-container hidden"></div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
